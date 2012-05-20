@@ -1,0 +1,60 @@
+body {
+  background-image: url('/assets/dark_matter.png');
+  color: #fff;
+  padding: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-shadow: 0pt -1px 0pt rgba(128,128,128,1.0);
+}
+
+.btn-container {
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.btn {
+  width: 80%;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.confirm-buttons .btn {
+  width: 40%;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn img {
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+.progress {
+  height: 25px;
+}
+
+.progress .bar {
+  height: 25px;
+}
+
+.footer {
+  padding-top: 5px;
+  text-align: center;
+  color: #aaa;
+  text-shadow: 0pt -1px 0pt rgba(64,64,64,1.0);
+}
+
+.variant h2 {
+  text-align: left;
+  margin-bottom: 2px;
+}

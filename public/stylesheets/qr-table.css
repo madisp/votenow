@@ -1,0 +1,29 @@
+.qr-table-container {
+  text-align: middle;
+}
+
+.qr-table {
+  border-width: 0;
+  border-style: none;
+  border-color: #00f;
+  border-collapse: collapse;
+}
+
+.qr-table td {
+  border-width: 0;
+  border-style: none;
+  border-color: #0000ff;
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+  width: 6px;
+  height: 6px;
+}
+
+.qr-table td.black {
+  background-color: #000;
+}
+
+.qr-table td.white {
+  background-color: #fff;
+}

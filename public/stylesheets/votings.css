@@ -1,0 +1,136 @@
+html {
+  background-image: url('/assets/chruch.png');
+}
+
+body {
+  padding-bottom: 40px;
+  background-image: url('/assets/chruch.png');
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  text-shadow: 0pt 2px 5px rgba(0,0,0,0.2);
+}
+
+#main-content {
+  padding: 60px 30px 45px 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 12px 7px #aaa;
+  min-height: 400px;
+}
+
+.question {
+  clear: both;
+  text-align: center;
+  margin-top: 90px;
+  padding-bottom: 30px;
+}
+
+h2 {
+  text-align: left;
+}
+
+.variants {
+  padding-top: 30px;
+/*  background-color: #f00; */
+}
+
+.graphs {
+  padding-top: 30px;
+  text-align: right;
+}
+
+.graphs .bar {
+  height: 50px;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.graphs .bar .number {
+  position: absolute;
+  left: -60px;
+  top: 0px;
+  line-height: 60px;
+  font-size: 25px;
+  text-align: right;
+  width: 50px;
+}
+
+.graphs .bar .inner {
+  background-color: #999;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.2);
+  background: -moz-linear-gradient(top,  #aaa,  #999);
+}
+
+.variant {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+h2 {
+  margin-top: 15px;
+}
+
+.results {
+/*  background-color: #0f0; */
+}
+
+.participate {
+/*  background-color: #00f; */
+}
+
+
+.result {
+  float: left;
+  background-color: #999;
+  margin-left: 10px;
+  display: table-cell;
+  position: relative;
+  vertical-align: bottom;
+}
+
+.result-number {
+  line-height: 30px;
+  font-size: 25px;
+  text-align: center;
+  display: table-cell;
+}
+
+.axis-label {
+  margin-top: 10px;
+  float: left;
+  margin-left: 10px;
+  display: table-cell;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.stats {
+  text-align: center;
+  float: left;
+  width: 300px;
+}
+
+.stats h2 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.left-arrow {
+  line-height: 27px;
+  font-size: 37px;
+  text-align: left;
+}
+
+.right-arrow {
+  line-height: 27px;
+  font-size: 37px;
+  text-align: right;
+}

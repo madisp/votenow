@@ -20,7 +20,7 @@ class VotingsController < ApplicationController
   protected
     def fill_data
       @id = params[:id].to_i
-      @link = "http://goo.gl/Uf3tT"
+      @link = "http://goo.gl/oGWes"
       @qr = RQRCode::QRCode.new @link
       @votes = [14,7,3,34]
       @labels = ('A'..'Z').to_a
