@@ -25,7 +25,7 @@ class VotingsController < ApplicationController
       @votes = [14,7,3,34]
       @labels = ('A'..'Z').to_a
       @question = "Millises keeles on Ott Leplandi eurolaul \"Kuula\" parim?".html_safe
-      @answers = ['inglise keeles', 'vene keeles', 'hispaania keeles', 'eesti keeles']
+      @answers = ['inglise', 'vene', 'hispaania', 'eesti']
       @open_vote = @id % 2 == 0
     end
 end

@@ -1,5 +1,5 @@
 body {
-  background-image: url('/assets/dark_matter.png');
+  background-image: url('/images/dark_matter.png');
   color: #fff;
   padding: 10px;
 }
@@ -21,8 +21,8 @@ h1, h2 {
   width: 80%;
   font-size: 30px;
   text-align: left;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .confirm-buttons .btn {
