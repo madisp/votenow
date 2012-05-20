@@ -10,9 +10,9 @@ set :repository,  "git://github.com/madisp/votenow.git"
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :web, "btlshp.madisp.com"
-role :app, "btlshp.madisp.com"
-role :db, "btlshp.madisp.com", :primary => true
+role :web, "vote.madisp.com"
+role :app, "vote.madisp.com"
+role :db, "vote.madisp.com", :primary => true
 
 set :user, 'ubuntu'
 set :use_sudo, false

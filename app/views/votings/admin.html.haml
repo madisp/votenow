@@ -1,6 +1,9 @@
 .row
   .span12
-    %h1 Ott Lepland #1
+    %h1
+      %i.icon-trash
+      %i.icon-pencil
+      Ott Lepland #1
     %hr
 .row
   .span12
@@ -32,10 +35,10 @@
             %input{:value => '10', :style => 'width: 30px'}
             min
           %ul.unstyled
-            %li= answ_option "A", "Inglisekeelne"
-            %li= answ_option "B", "Venekeelne"
-            %li= answ_option "C", "Hispaaniakeelne"
-            %li= answ_option "D", "Eestikeelne"
+            %li= answ_option "A", "inglise keeles"
+            %li= answ_option "B", "vene keeles"
+            %li= answ_option "C", "hispaania keeles"
+            %li= answ_option "D", "eesti keeles"
             %li
               %a{:href=>'#'}= "lisa vastus".html_safe
       /.question-editor
@@ -76,7 +79,7 @@
           %ul.unstyled
             %li= answ_option('A', 'iOS')
             %li= answ_option('B', 'Android')
-            %li= answ_option('C', 'Muu')
+            %li= answ_option('C', 'muu')
             %li
               %a{:href=>'#'}= "lisa vastus".html_safe
     %a.btn{:href=>'#'} Lisa küsimus

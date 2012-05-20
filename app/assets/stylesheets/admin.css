@@ -24,3 +24,11 @@
 .question-editor [class^="icon-"]:hover {
   cursor: pointer;
 }
+
+h1 [class^="icon-"] {
+  vertical-align: baseline;
+}
+
+h1 [class^="icon-"]:hover {
+  cursor: pointer;
+}
