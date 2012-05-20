@@ -7,6 +7,9 @@ gem 'rails', '3.2.3'
 
 gem 'sqlite3'
 
+gem 'execjs'
+gem 'therubyracer'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -36,7 +39,7 @@ gem 'rqrcode'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
