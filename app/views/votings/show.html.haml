@@ -1,0 +1,37 @@
+- sum = @votes.inject(&:+)
+.row
+  .span6.stats
+    %h2 Aega jäänud: 10:43
+  .span6.stats
+    %h2= "#{sum} hääletanut"
+.row
+  .span12.question
+    %h1= @question
+.row
+  .span6
+    .variants
+      - @answers.count.times do |i|
+        .variant
+          %b= @labels[i]
+          = " - #{@answers[i]}"
+    .participate
+      %h2
+        Osale - 
+        = @link
+      = qr_table(@qr)
+  .span6.results
+    - tot_height = 350
+    - tot_width = 460
+    - width = ((1.to_f/@votes.count.to_f) * tot_width).to_i - 10
+    = "<div style='height: #{tot_height}px'>".html_safe
+    - cumul_width = 0
+    - @votes.each do |v|
+      - height = ((v.to_f / sum.to_f) * tot_height).to_i
+      - margin = tot_height - height
+      - percent = ((v.to_f / sum.to_f) * 100).round.to_i
+      = "<div class='result' style='top: #{margin}px; height: #{height}px; width: #{width}px'>".html_safe
+      = "<div class='result-number' style='position: relative; top: -30px; width: #{width}px'>#{percent}%</div></div>".html_safe
+      - cumul_width += width + 10
+    = "</div>".html_safe
+    - @votes.count.times do |v|
+      = "<div class='axis-label' style='width: #{width}px'>#{%w(A B C D E F G H I J K L M N O P Q)[v]}</div>".html_safe

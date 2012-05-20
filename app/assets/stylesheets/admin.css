@@ -1,0 +1,26 @@
+.question-editor {
+  text-align: left
+}
+
+.question-editor .well {
+  width: 85%;
+}
+
+.question-editor .reorder:hover, .question-editor h3 {
+  cursor:hand;
+  cursor:grab;
+  cursor:-moz-grab;
+  cursor:-webkit-grab;
+}
+
+.question-editor .inline {
+  width: 80%;
+}
+
+.question-editor [class^="icon-"] {
+  vertical-align: baseline;
+}
+
+.question-editor [class^="icon-"]:hover {
+  cursor: pointer;
+}

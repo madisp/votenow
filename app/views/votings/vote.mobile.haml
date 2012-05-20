@@ -1,0 +1,7 @@
+%h1= @question
+
+- @answers.count.times do |i|
+  .btn-container
+    %a.btn.btn-success.btn-large{:href=>"/votings/#{@id}/confirm/#{i}"}
+      %b= @labels[i]
+      = "- #{@answers[i]}"

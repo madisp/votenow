@@ -1,0 +1,16 @@
+%h1= @question
+
+- i = @choice
+
+%h2
+  Sinu valik:
+  %b= @labels[i]
+  = " - #{@answers[@choice]}"
+
+.btn-container.confirm-buttons
+  %a.btn.btn-large.btn-danger{:href=>"/votings/#{@id}/vote"}
+    = image_tag 'delete_24.png'
+    Tagasi
+  %a.btn.btn-large.btn-success{:href=>"/votings/#{@id}/results"}
+    = image_tag 'checkmark_24.png'
+    Kinnita

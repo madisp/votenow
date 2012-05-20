@@ -1,0 +1,89 @@
+.row
+  .span12
+    %h1 Ott Lepland #1
+    %hr
+.row
+  .span12
+    .tabbable
+      %ul.nav.nav-tabs
+        %li.active= link_to 'Küsimused', '#', 'data-toggle' => 'tab'
+        %li= link_to 'Mall', '#', 'data-toggle' => 'tab'
+      .tab-content
+.row
+  .span8
+    .questions
+      .question-editor
+        %h3#q1-head
+          %i.icon-trash
+          %i.icon-pencil{:onclick => "$('#q1-head').hide();$('#q1-edit').show();"}
+          Millises keeles on Ott Leplandi eurolaul "Kuula" parim?
+        #q1-edit{:style=>'display: none'}
+          %input.inline{:value => 'Millises keeles on Ott Leplandi eurolaul "Kuula" parim?'}
+          %i.icon-ok{:onclick => "$('#q1-head').show();$('#q1-edit').hide();"}
+        .well
+          %p
+            %label.checkbox
+              %input{:type => 'checkbox'}
+              Tulemused hääletamise ajal avalikud
+          %p
+            %label.checkbox
+              %input{:type => 'checkbox'}
+              Küsimusel on ajapiirang:
+            %input{:value => '10', :style => 'width: 30px'}
+            min
+          %ul.unstyled
+            %li= answ_option "A", "Inglisekeelne"
+            %li= answ_option "B", "Venekeelne"
+            %li= answ_option "C", "Hispaaniakeelne"
+            %li= answ_option "D", "Eestikeelne"
+            %li
+              %a{:href=>'#'}= "lisa vastus".html_safe
+      /.question-editor
+      /  %h3#q2-head
+      /    %i.icon-trash
+      /    %i.icon-pencil{:onclick => "$('#q2-head').hide();$('#q2-edit').show();"}
+      /    Milline aastaaeg meeldib kõige rohkem?
+      /  #q2-edit{:style=>'display: none'}
+      /    %input{:value => 'Milline aastaaeg meeldib kõige rohkem?'}
+      /    %i.icon-ok{:onclick => "$('#q2-head').show();$('#q2-edit').hide();"}
+      /  .well
+      /    %ul
+      /      %li= answ_option('A', 'Suvi')
+      /      %li= answ_option('B', 'Sügis')
+      /      %li= answ_option('C', 'Talv')
+      /      %li= answ_option('D', 'Kevad')
+      /      %li
+      /        %a{:href=>'#'}= "lisa vastus".html_safe
+      .question-editor
+        %h3#q3-head
+          %i.icon-trash
+          %i.icon-pencil{:onclick => "$('#q3-head').hide();$('#q3-edit').show();"}
+          Millise operatsioonisüsteemiga telefoni kasutad?
+        #q3-edit{:style=>'display: none'}
+          %input.inline{:value => 'Millise operatsioonisüsteemiga telefoni kasutad?'}
+          %i.icon-ok{:onclick => "$('#q3-head').show();$('#q3-edit').hide();"}
+        .well
+          %p
+            %label.checkbox
+              %input{:type => 'checkbox'}
+              Tulemused hääletamise ajal avalikud
+          %p
+            %label.checkbox
+              %input{:type => 'checkbox'}
+              Küsimusel on ajapiirang:
+            %input{:value => '10', :style => 'width: 30px'}
+            min
+          %ul.unstyled
+            %li= answ_option('A', 'iOS')
+            %li= answ_option('B', 'Android')
+            %li= answ_option('C', 'Muu')
+            %li
+              %a{:href=>'#'}= "lisa vastus".html_safe
+    %a.btn{:href=>'#'} Lisa küsimus
+  .span4
+    %p
+      Mingisugune help tekst
+    %p
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    %hr
+    %a.btn.btn-success{:href=>'/votings/0/present'} Esitlema

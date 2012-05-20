@@ -1,0 +1,13 @@
+%h1= @question
+
+- sum = @votes.inject(&:+)
+
+- if @open_vote
+  - @answers.count.times do |i|
+    - p = ((@votes[i].to_f/sum.to_f)*100).to_i
+    .variant
+      %h2= "#{@labels[i]} - #{@answers[i]}: #{p}%"
+    .progress
+      .bar{:style => "width: #{p}%"}
+
+%h2 Aitäh!

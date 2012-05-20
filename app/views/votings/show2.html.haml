@@ -1,0 +1,41 @@
+- sum = @votes.inject(&:+)
+.row
+  .span8
+    .stats
+      %h2
+        Aega jäänud: 10:43
+        %br
+        #{sum} hääletanut
+    .stats
+      %h2
+        Osale - 
+        = "goo.gl/Uf3tT"
+    .question
+      %h1= @question
+  .span4.stats
+    .qr-table-container
+      = image_tag 'http://qrcode.kaywa.com/img.php?s=8&d=http%3A%2F%2Fgoo.gl%2FUf3tT'
+.row
+  .span6.graphs
+    - tot_width = 440
+    - @votes.each do |v|
+      - width = ((v.to_f / sum.to_f) * tot_width).to_i
+      - margin = tot_width - width
+      - percent = ((v.to_f / sum.to_f) * 100).round.to_i
+      .bar{:style => "left:#{margin}px;width:#{width}px"}
+        .number= "#{percent}%"
+        .inner
+  .span6.variants
+    - @answers.count.times do |i|
+      .variant
+        %b= @labels[i]
+        = " - #{@answers[i]}"
+
+.row{:style=>'padding-top:15px'}
+  .span3.left-arrow
+    %h3 ⇠
+  .span6{:style=>'text-align:center'}
+    %h3
+      Powered by VoteNow!
+  .span3.right-arrow
+    %h3 ⇢

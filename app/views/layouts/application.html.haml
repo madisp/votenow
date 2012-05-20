@@ -1,0 +1,12 @@
+!!! 5
+%html
+  %head
+    %title VoteNow!
+    = stylesheet_link_tag 'bootstrap.min'
+    = stylesheet_link_tag 'qr-table'
+    = stylesheet_link_tag 'votings'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  %body
+    #main-content.container
+      = yield
